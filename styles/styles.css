@@ -100,24 +100,24 @@ body {
     color: var(--green);
 }
 
-#experience h1 {
+#experience h1, #education h1 {
     font-size: 35px;
     margin: 15px 0;
     position: relative;
 }
 
-.experience-section h3 {
+.experience-section h3, .education-section h3 {
     font-size: 23px;
-    margin: 10px 0;
+    margin: 10px 0 0px 0;
 }
 
-.experience-section p {
+.experience-section p, .education-section p {
     color: var(--text-color);
     font-size: 15px;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
-.experience-section p:nth-child(2) {
+.experience-section p:nth-child(2), .education-section p:nth-child(2) {
     font-weight: 800;
 }
 
@@ -126,3 +126,4 @@ body {
     color: var(--green);
     float: right;
 }
+
