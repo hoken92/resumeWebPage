@@ -12,7 +12,18 @@
 body {
     background-color: beige;
     overflow-x: hidden;
+    font-family: "Saira Extra Condensed", sans-serif;
+    font-weight: 800;
+    font-style: normal;
 
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
 
 #side-nav{
@@ -42,7 +53,7 @@ body {
 #side-nav ul li {
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     margin: 10px;
     text-align: center;
 }
@@ -76,7 +87,7 @@ body {
 
 #about p {
    color: var(--text-color);
-   font-size: 20px;
+   font-size: 25px;
 }
 
 #about p:nth-child(3) {
@@ -100,24 +111,24 @@ body {
     color: var(--green);
 }
 
-#experience h1, #education h1 {
-    font-size: 35px;
+#experience h1, #education h1, #skills h1 {
+    font-size: 55px;
     margin: 15px 0;
     position: relative;
 }
 
 .experience-section h3, .education-section h3 {
-    font-size: 23px;
+    font-size: 30px;
     margin: 10px 0 0px 0;
 }
 
-.experience-section p, .education-section p {
+.experience-section p, .education-section p, #skills-section p, #skills-section li {
     color: var(--text-color);
-    font-size: 15px;
+    font-size: 16px;
     margin: 5px 0;
 }
 
-.experience-section p:nth-child(2), .education-section p:nth-child(2) {
+.experience-section p:nth-child(2), .education-section p:nth-child(2), #skills-section p:nth-child(1) {
     font-weight: 800;
 }
 
@@ -127,3 +138,15 @@ body {
     float: right;
 }
 
+#skills-section ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#skills-section li::before {
+    font-family: "Material Icons";
+    /* content: '\e5ca'; */
+}
