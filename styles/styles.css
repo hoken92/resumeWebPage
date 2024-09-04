@@ -6,6 +6,7 @@
 :root {
     --green: rgba(10, 75, 28, 0.92);
     --text-color: rgba(66, 66, 66, 0.80);
+    scroll-behavior: smooth;
 }
 
 body {
@@ -48,7 +49,7 @@ body {
 
 #side-nav a {
     text-decoration: none;
-    width: 100%;
+    width: 100%;    
 }
 
 #main-container {
@@ -62,10 +63,10 @@ body {
     height: 100%;
     width: 60vw;
     margin-left: 5vw;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 #about h1 {
@@ -97,4 +98,31 @@ body {
 
 .green {
     color: var(--green);
+}
+
+#experience h1 {
+    font-size: 35px;
+    margin: 15px 0;
+    position: relative;
+}
+
+.experience-section h3 {
+    font-size: 23px;
+    margin: 10px 0;
+}
+
+.experience-section p {
+    color: var(--text-color);
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.experience-section p:nth-child(2) {
+    font-weight: 800;
+}
+
+.date-range {
+    font-size: 20px;
+    color: var(--green);
+    float: right;
 }
